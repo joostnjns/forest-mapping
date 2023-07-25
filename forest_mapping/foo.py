@@ -14,4 +14,5 @@ def foo() -> str:
 
 
 if __name__ == "__main__":  # pragma: no cover
+    print("Dev container build succesfull.")
     pass
