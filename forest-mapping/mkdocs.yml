@@ -1,0 +1,54 @@
+site_name: forest-mapping
+repo_url: https://github.com/joostnjns/forest-mapping
+site_url: https://joostnjns.github.io/forest-mapping
+site_description: Repository to map forest types based on open-source satellite data.
+site_author: Joost Neujens
+edit_uri: edit/main/docs/
+repo_name: joostnjns/forest-mapping
+copyright: Maintained by <a href="https://joostnjns.com">Florian</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+            setup_commands:
+                - import sys
+                - sys.path.append('../')
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/joostnjns/forest-mapping
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/forest-mapping
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
