@@ -1,3 +1,10 @@
+# To do
+- Extracting 'ground truth' from forest type using source: https://maps.elie.ucl.ac.be/lifewatch/ecotopes.html?lang=en
+- Further preprocessing of sentinel1 or 2
+- Test segment everything
+- Data fusion sentinel 1 and 2
+- Supervised classification of segments, potentially taking into account time-related information (imagery as timeseries)
+
 # forest-mapping
 
 [![Release](https://img.shields.io/github/v/release/joostnjns/forest-mapping)](https://img.shields.io/github/v/release/joostnjns/forest-mapping)
