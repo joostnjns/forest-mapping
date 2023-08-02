@@ -16,8 +16,15 @@
 		// Sets the run context to one level up instead of the .devcontainer folder.
 		"context": "..",
 		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
-		"dockerfile": "../Dockerfile"
-	}
+		"dockerfile": "../Dockerfile",
+		// Add this section to install the Jupyter extension.
+		"extensions": [
+			"ms-python.vscode-python",
+			"ms-toolsai.jupyter"
+		]
+	},
+
+	"postStartCommand": "python -c 'import os; from dotenv import load_dotenv; load_dotenv()'"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
